@@ -4,6 +4,10 @@
 font-family: 'Lato', sans-serif;
 font-family: 'Catamaran', sans-serif; */
 
+.wrapper{
+    overflow: hidden;
+}
+
 :root {
     --light-gray: #2b3032a1;
     --primary-color: #45ccb8;
@@ -30,8 +34,12 @@ font-family: 'Catamaran', sans-serif; */
 
 .logo{
     height: 40px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-bottom: -28px;
+}
+
+html, body{
+    overflow-x: hidden;
 }
 
 *{
@@ -158,10 +166,18 @@ nav ul li{
     grid-template-columns: repeat(auto-fit, minmax(14rem,1fr ));
     grid-gap: 25px;
     /* transform: translateX(100px); */
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    position: relative;
+    right: 70px;
+    overflow: hidden;
 }
 
 .icons p{
     margin-top: 10px;
+    
 }
 
 .icons img{
@@ -381,12 +397,14 @@ nav ul li{
     margin: 120px auto;
     position: relative;
     margin-left: 30px;
+    overflow-x: hidden;
 
 
 }
 
 .fourth{
-    margin-right: 65px;
+    /* margin-right: 65px; */
+    overflow: hidden;
 }
 
 .fourth img{
@@ -520,7 +538,8 @@ nav ul li{
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     margin-left: 30px;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 1000px;
 }
 
 .Join-Us h1{
@@ -885,3 +904,52 @@ footer .container{
     }
 }
 
+
+@media(max-width: 450px){
+
+    header{
+        overflow: hidden;
+        max-width: 370px !important; 
+    }
+
+    main{
+        overflow: hidden;
+        max-width: 370px !important;
+    }
+
+    .container{
+        overflow: hidden;
+
+        /* position: absolute; */
+    }
+
+    .container1{
+        margin: 0 auto;
+        text-align: center;
+        width: 300px !important;
+        overflow: hidden;
+    }
+
+    .Join-Us .buttons{
+        position: relative;
+        right: 10px;
+    }
+
+    .icons{
+        text-align: center;
+        position: relative;
+        right: 30px;
+        overflow: hidden;
+    }
+
+    .wrapper{
+        overflow-x: hidden;
+        position: relative;
+        /* width: 270px; */
+    }
+    
+
+  
+
+
+}
